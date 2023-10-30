@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1><span>アプリ名</span></h1>
+        <h2>希望の歌手を選択してください</h2>
+        <br>
+        <form action="/songname2" method="post">
+            <select name="last_artist_name">
+                {% for singer, url in singers.items() %}
+                    <option value="{{ url }}">{{ singer }}</option>
+                {% endfor %}
+            </select>
+            <p></p>
+            <button type="submit" class="button">決定</button>
+        </form>
+    </div>
+
+{% endblock %}

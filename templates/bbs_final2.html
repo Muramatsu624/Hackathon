@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1><span>アプリ名</span></h1>
+        <h2>歌詞</h2>
+        <p class="lyric">{{ Liric }}</p>
+        <form action="/judge" method="get">
+            <button type="submit" class="button">対戦</button>
+        </form>
+    </div>
+{% endblock %}

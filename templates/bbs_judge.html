@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1><span>アプリ名</span></h1>
+        <h2>点数 (Player1 vs Player2)</h2>
+        <h2>{{ point1 }} vs {{ point2 }}</h2>
+        <form action="/" method="get">
+            <button type="submit" class="button">終わる</button>
+        </form>
+    </div>
+{% endblock %}

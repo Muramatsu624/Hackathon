@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1><span>アプリ名</span></h1>
+        <h2>お題 : 「{{theme}}」</h2>
+        <br><br>
+        <h2>Player1 歌手名を入力</h2>
+        
+        <form action="/arti" method="post">
+            <label for="artist_name" class="text_title">歌手名</label>
+            <input type="text" name="artist_name" class="textbox">
+            <br><br>
+            <button type="submit" class="button">送信する</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*各htmlタグの設定*/
+
+/*背景色*/
+body {
+    background-color: #FFF6DC;
+}
+
+/*中央揃え*/
+div {
+    text-align: center;
+    transform: translateY(15%) translateX(0%);
+}
+
+select {
+    font-size: 100%;
+}
+
+
+option {
+    font-size: 100%;
+}
+
+/*見出し*/
+h1 {
+    position: relative;
+    margin: 30px;
+    text-align: center;
+}
+   
+h1:before,
+h1:after {
+    position: absolute;
+    z-index: 0;
+    bottom: -10px;
+    display: block;
+    content: '';
+    border: 1em solid #d90606;
+}
+
+h1:before {
+    left: -30px;
+    border-left-width: 15px;
+    border-left-color: transparent;
+}
+
+h1:after {
+    right: -30px;
+    border-right-width: 15px;
+    border-right-color: transparent;
+}
+
+h1 span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 1rem 2rem;
+    color: white;
+    background: #fa4141;
+}
+
+h1 span:before,
+h1 span:after {
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-style: solid;
+    border-color: #b70505 transparent transparent transparent;
+}
+
+h1 span:before {
+    left: 0;
+    border-width: 10px 0 0 10px;
+}
+
+h1 span:after {
+    right: 0;
+    border-width: 10px 10px 0 0;
+}
+
+
+
+
+
+
+
+
+/*各classの設定*/
+
+/*テキストボックス*/
+.textbox {
+    display: inline-block;
+    width: 10%;
+    padding: 0.5em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin: 0.5em 0;
+}
+
+/*送信ボタン*/
+.button {
+    display: inline-block;
+    border-radius: 5%;       
+    font-size: 18pt;      
+    text-align: center;      
+    cursor: pointer;     
+    padding: 12px 12px;   
+    background: #ff7f00;    
+    color: #ffffff;    
+    line-height: 1em;        
+    transition: .3s;      
+    box-shadow: 6px 6px 3px #666666;  
+    border: 2px solid #ff7f00;    
+}
+
+.button:hover {
+    box-shadow    : none;        
+    color         : #ff7f00;     
+    background    : #ffffff;    
+  }
+
+/*テキストボックスのタイトル*/
+.text_title {
+    font-size : 15pt;
+}
+
+/*歌詞*/
+.lyric {
+    margin:20px; 
+    padding:20px 0;
+    border:5px solid rgb(212, 129, 35);
+    background-color:#FFF6DC;
+    line-break: strict;
+}

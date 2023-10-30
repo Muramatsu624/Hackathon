@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>書き込みました</h1>
+    <p>{{ message }}</p>
+    <p>{{ artist }} {{ song }}</p>
+
+
+    
+
+    <form action="/judge" method="get">
+        <button type="submit">対戦</button>
+    </form>
+
+
+
+
+{% endblock %}
